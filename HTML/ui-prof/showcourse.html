@@ -11,11 +11,12 @@
 
     <header class="header">
         <div class="container">
-          <h1 class="site-title">Welcome Student !</h1>
+          <h1 class="site-title">Welcome Professor !!</h1>
+          <hr>
+         
         <span class="site-tagline">Course Registration System</span>
       </div>
     </header>
-
     <br>
     <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,23 +26,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Register Course</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="professor.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+              <a class="nav-link" href="showcourse.html">Show Courses <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="viewcourse.html">View Courses</a>
+              <a class="nav-link" href="Addgrades.html">Add Grades</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="viewgradecard.html">View Grade Card</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="fees.html">Payment</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Logout</a>
+              <a class="nav-link" href="registerstudents.html"> Register students</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="professor.html">Logout</a>
               </li>
           </ul>
           <span class="navbar-text">
@@ -50,34 +48,13 @@
         </div>
       </nav>
     </div>
-
-    <br>
-    <div class ="header">
-        <div class="container">
-        <h2 class="site-title" id="registercourse">Register Course</h2>
-    </div>
-    </div>
-    <div class="container">
-    <form>
-        <div class="form-group">
-          <label for="SemesterID">Semester ID</label>
-          <input type="text" class="form-control" id="SemesterID" placeholder="Enter Semester ID">
-        </div>
-       
-        <div class="form-group">
-          <label for="CourseID">Course ID</label>
-          <input type="text" class="form-control" id="CourseID" placeholder="Enter Course ID">
-        </div>
-        <button class="btn btn-dark"  type="submit" value="Submit">Submit</button>
-      </form>
-    </div>
-
-    <hr>
-    <br>
-
+</div>
+<hr>
+<br>
     <div class ="header">
         <div class="container">
         <h2 class="site-title" id="listofcourse">List of Available Courses</h2>
+    </div>
     </div>
     <div class ="header">
     <div class="container">
@@ -86,8 +63,10 @@
               <tr>
                 <th scope="col">Course ID</th>
                 <th scope="col">Course Name</th>
+                <th scope="col">Course Type</th>
                 <th scope="col">Course Details</th>
                 <th scope="col">Course Fee</th>
+                <th scope="col">Semester Id</th>
                 
               </tr>
             </thead>
@@ -95,20 +74,26 @@
               <tr>
                 <th scope="row">101</th>
                 <td>Java</td>
-                <td>Full Time</td>
+                <td>Full time</td>
+                <td>Programming</td>
                 <td>5000</td>
+                <td>1</td>
               </tr>
               <tr>
                 <th scope="row">102</th>
                 <td>Python</td>
-                <td>Full Time</td>
+                <td>Full time</td>
+                <td>Programming</td>
                 <td>3000</td>
+                <td>1</td>
               </tr>
               <tr>
                 <th scope="row">103</th>
                 <td>Angular</td>
-                <td>Full Time</td>
+                <td>Full time</td>
+                <td>Programming</td>
                 <td>5000</td>
+                <td>2</td>
               </tr>
             </tbody>
           </table>
