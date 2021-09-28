@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-
+  <div class="container pt-3">
+    
     <header class="header">
         <div class="container">
           <h1 class="site-title">Welcome Student !</h1>
@@ -24,26 +25,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="registercourse.html">Register Course</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="viewcourse.html">View Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">View Grade Card</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="fees.html">Payment</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Logout</a>
-                  </li>
-              </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Register Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewcourse.html">View Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="viewgradecard.html">View Grade Card</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fees.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Logout</a>
+              </li>
+          </ul>
           <span class="navbar-text">
             Login Time : ...
           </span>
@@ -54,7 +55,7 @@
     <br>
     <div class ="header">
         <div class="container">
-        <h2 class="site-title" id="registercourse">View Grade Card</h2>
+        <h2 class="site-title" id="registercourse">Register Course</h2>
     </div>
     </div>
     <div class="container">
@@ -62,6 +63,11 @@
         <div class="form-group">
           <label for="SemesterID">Semester ID</label>
           <input type="text" class="form-control" id="SemesterID" placeholder="Enter Semester ID">
+        </div>
+       
+        <div class="form-group">
+          <label for="CourseID">Course ID</label>
+          <input type="text" class="form-control" id="CourseID" placeholder="Enter Course ID">
         </div>
         <button class="btn btn-dark"  type="submit" value="Submit">Submit</button>
       </form>
@@ -72,7 +78,7 @@
 
     <div class ="header">
         <div class="container">
-        <h2 class="site-title" id="listofcourse">Semester Grade Card</h2>
+        <h2 class="site-title" id="listofcourse">List of Available Courses</h2>
     </div>
     <div class ="header">
     <div class="container">
@@ -81,7 +87,8 @@
               <tr>
                 <th scope="col">Course ID</th>
                 <th scope="col">Course Name</th>
-                <th scope="col">Grade</th>
+                <th scope="col">Course Details</th>
+                <th scope="col">Course Fee</th>
                 
               </tr>
             </thead>
@@ -89,24 +96,27 @@
               <tr>
                 <th scope="row">101</th>
                 <td>Java</td>
-                <td>A</td>
+                <td>Full Time</td>
+                <td>5000</td>
               </tr>
               <tr>
                 <th scope="row">102</th>
                 <td>Python</td>
-                <td>B</td>
+                <td>Full Time</td>
+                <td>3000</td>
               </tr>
               <tr>
                 <th scope="row">103</th>
                 <td>Angular</td>
-                <td>C</td>
+                <td>Full Time</td>
+                <td>5000</td>
               </tr>
             </tbody>
           </table>
     </div>
 </div>
 
-
+</div>
 
     
 </body>
